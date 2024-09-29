@@ -1,0 +1,53 @@
+.home_section{
+    color: #fff;
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../../assets/common-bg.svg);
+    background-position: center;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    position: relative;
+}
+.home_content{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 92%;
+}
+h1{
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #111;
+    font-weight: 800;
+}
+.description{
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+}
+.description p{
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6;
+}
+.button{
+    margin-top: 5rem;
+    text-align: center;
+}
+button{
+    background: #7843E9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: #a089ab;
+    padding: 1.5rem 8rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+.header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    color: #333;
+    transition: color .3s ease 0s;
+}
+.leftSide .logo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 3px;
+    background: #7843E9;
+}
+.leftSide .logo_img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.leftSide .name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.rightSide{
+    display: flex;
+}
+.rightSide .headerLinks{
+    display: flex;
+    list-style: none;
+}
+.headerLinks li {
+    margin-right: 20px;
+}
+  
+.headerLinks li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: color .3s ease 0s;
+}
+
+/* Hide the mobile menu toggle button by default */
+.menu-toggle {
+    z-index: 1000;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+  
+/* Mobile menu styling */
+.mobile-menu {
+    background-color: white;
+    padding: 10px;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    padding: 0 10px;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.mobile-menu ul li {
+    padding: 10px 0;
+    border-bottom:0.1px solid #e1e1e1;
+}
+  
+.mobile-menu ul li a {
+    color: #333;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+    text-decoration: underline;
+}
+/* RESPONSIVENESS */
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .rightSide {
+      display: none; /* Hide the desktop navbar */
+    }
+  
+    .menu-toggle {
+      display: block; /* Show the hamburger icon */
+    }
+}
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+    .mobile-menu {
+      display: none; /* Hide mobile menu */
+    }
+}
