@@ -37,6 +37,10 @@ h1{
 .button{
     margin-top: 5rem;
     text-align: center;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button{
     background: #7843E9;
