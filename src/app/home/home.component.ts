@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UpperCasePipe } from '@angular/common';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,10 @@ import { UpperCasePipe } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  constructor(private viewPortScroller:ViewportScroller){}
+
+  onProjectsClick(){
+    this.viewPortScroller.scrollToAnchor('projects');
+  }
 
 }

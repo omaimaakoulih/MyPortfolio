@@ -11,10 +11,10 @@ import { UpperCasePipe } from "@angular/common";
 })
 export class Header{
     name:string = 'AKOULIH Omayma';
-    links = [{name:'Home', url:'./'},
-        {name:'About', url:'./'},
-        {name : 'Projects', url: './'},
-        {name : 'Contact', url : './'}];
+    links = [{name:'Home', url:'#home'},
+        {name:'About', url:'#about'},
+        {name : 'Projects', url: '#projects'},
+        {name : 'Contact', url : '#contact'}];
     
     isMenuOpen: boolean = false;
 

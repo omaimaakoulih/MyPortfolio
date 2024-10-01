@@ -2,14 +2,14 @@
     color: #fff;
     background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../../assets/common-bg.svg);
     background-position: center;
-    height: 100vh;
-    min-height: 80rem;
-    max-height: 120rem;
+    height: 90vh;
+    min-height: 60rem;
+    max-height: 60rem;
     position: relative;
 }
 .home_content{
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90rem;
